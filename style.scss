@@ -1,0 +1,47 @@
+.threadFormOptions {
+    display: flex;
+    border: 2px solid $wcfContentContainerBorder;
+    border-radius: 3px;
+    
+    &::before {
+        content: '\f08d';
+        font-family: FontAwesome;
+        font-size: 48px;
+        padding: 20px;
+        background-color: $wcfContentContainerBorder;
+        display: flex;
+        align-items: center;
+    }
+    
+    > dl {
+        padding: 20px;
+    }
+}
+
+#tpl_wcf_user {
+.section {
+	margin-top: 0 !important;
+}
+	
+dl:not(.plain) > dd {
+	margin: 20px 0;
+}
+	
+.tabMenu > ul, .menu > ul {
+    display: none;
+}
+}
+
+.mainMenu .badge.badgeUpdate, a.badge.badgeUpdate { 
+	display: none; 
+}
+
+@include screen-sm-down {
+.galleryAlbumList {
+	margin: 10px;
+}
+	
+#tpl_wbb_thread .messageHeader {
+	margin-top: 20px;
+}
+}
